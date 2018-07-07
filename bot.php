@@ -1,7 +1,7 @@
 <?php
 //require 'vendor/autoload.php';
 
-$access_token = 'XGwHGXONz/LuYr3OZOVLFKMazoBIOwK/hoZa9SHGaOz6Zqu8aaW+AkRtKc8zs4A5GcYk1qFA0ONzsqU+iqbITU8TupYFIKLek5TJnZyBtmUGc65fGUrjk56JGE1Ay2m87lgfR53jCd5gsWO/G1cESgdB04t89/1O/w1cDnyilFU=';
+$access_token = 'hUdNLfPOzTd1okSFBZZIKpoeohdkTqSc4lmdxKQfWb6d4YmG4Kk6hYEa6X2lyYwysspXaAmExjGzEXF+Xv/xALQy6o5qB5py8Xm+kku0/lSAKdEpPBPC43nzxdSFlX4docIYT8fM9bEXPV+ffkd1RwdB04t89/1O/w1cDnyilFU=';
 $proxy = 'velodrome.usefixie.com:80';
 $proxyauth = 'fixie:W8B1EissNtwSwyk';
 
@@ -20,14 +20,14 @@ if (!is_null($events['events'])) {
       // Get replyToken
       $replyToken = $event['replyToken'];
 
-      if ($text == 'สวัสดี') {
-        $replyText = 'สวัสดีเช่นกัน';
-      } else if ($text == 'คุณชื่ออะไร') {
-        $replyText = 'ศานติโลกา';
-      } else if ($text == 'ทำอะไรได้บ้าง') {
-        $replyText = 'ฉันทำได้หลายอย่าง เช่น บอกคุณว่าเรามีกิจกรรมอะไรบ้างในอนาคต';
+      if ($text == 'geo') {
+        $replyText = 'yes';
+      } else if ($text == 'me') {
+        $replyText = 'help';
+      } else if ($text == 'speed') {
+        $replyText = 'media';
       } else {
-        $replyText = 'เราอย่าพูดถึงเรื่องนี้เลยดีกว่า';
+        $replyText = 'tidak';
       }
 
       // Build message to reply back
